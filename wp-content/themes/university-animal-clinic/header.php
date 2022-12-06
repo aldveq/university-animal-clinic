@@ -25,35 +25,156 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'university-animal-clinic' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$university_animal_clinic_description = get_bloginfo( 'description', 'display' );
-			if ( $university_animal_clinic_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $university_animal_clinic_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+	<div class="covid-message">
+		<div class="container">
+			<div class="covid-text">Covid-19 message: University Animal Clinic is always looking out for the safety of
+				our clients and staff.
+				Please visit our COVID-19 Updates page for more information on our curbside
+				check-in process.</div>
+			<div class="covid-link">
+				<a class="learn-more" href="#">learn more <span class="icon-arrow-right"></span></a>
+			</div>
+			<a href="javascript:void(0);" class="icon-close removeit"></a>
+		</div>
+	</div>
+	<header class="header">
+		<div class="container">
+			<div class="header-wrap">
+				<div class="header-logo">
+					<a href="#">
+						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/logo.png" alt="University Animal Clinic" />
+					</a>
+				</div>
+				<div class="header-right">
+					<div class="header-content">
+						<div class="call-us"><span>call us today</span> <a href="tel:9413557707">941-355-7707</a></div>
+						<div class="online-request">
+							<a href="#" class="btn btn-secondary">Online Pharmacy</a>
+							<a href="#" class="btn btn-primary">Request an Appointment</a>
+						</div>
+					</div>
+					<div class="header-bottom">
+						<nav class="navbar navbar-expand-lg navbar-light">
+							<button class="navbar-toggler" type="button" data-toggle="collapse"
+								data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+								aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon">
+									<span></span>
+									<span></span>
+									<span></span>
+								</span>
+								<span class="menu-text">Menu</span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav">
+									<li class="nav-item active">
+										<a class="nav-link dropdown-toggle" href="javascript:void(0);"
+											data-toggle="dropdown">Services</a>
+										<ul class="submenu dropdown-menu">
+											<li class="nav-item"><a class="nav-link" href="#">Telemedicine/Virtual
+													Veterinary Services</a>
+												<ul class="submenu dropdown-menu">
+													<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 1
+														</a></li>
+													<li class="nav-item"><a class="nav-link" href="#"> Dropdown item
+															2</a></li>
+													<li class="nav-item"><a class="nav-link" href="#"> Dropdown item
+															3</a></li>
+												</ul>
+											</li>
+											<li class="nav-item"><a class="nav-link" href="#">Wellness Plans</a></li>
+											<li class="nav-item"><a class="nav-link" href="#">Vaccinations</a></li>
+											<li class="nav-item"><a class="nav-link" href="#">Exotic Pet Care</a></li>
+											<li class="nav-item"><a class="nav-link" href="#">Laser Therapy</a></li>
+											<li class="nav-item"><a class="nav-link" href="#">Dental Cleaning</a></li>
+											<li class="nav-item"><a class="nav-link" href="#">Elderly Pet Care
+													Services</a></li>
+											<li class="nav-item"><a class="nav-link" href="#">Pet Microchipping</a></li>
+											<li class="nav-item"><a class="nav-link" href="#">Dog Grooming Services</a>
+											</li>
+											<li class="nav-item"><a class="nav-link" href="#">How to Treat
+													Heartworms</a></li>
+											<li class="nav-item"><a class="nav-link" href="#">Flea & Tick Prevention</a>
+											</li>
+											<li class="nav-item"><a class="nav-link" href="#">Surgery and Specialty
+													Services for Pets</a></li>
+											<li class="nav-item"><a class="nav-link" href="#">Treating Itchy Skin & Pet
+													Allergies</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link dropdown-toggle" href="javascript:void(0);"
+											data-toggle="dropdown">Types of
+											Animals</a>
+										<ul class="submenu dropdown-menu">
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 1 </a></li>
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 2</a></li>
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 3</a></li>
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 4</a>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link dropdown-toggle" href="javascript:void(0);"
+											data-toggle="dropdown">Resources</a>
+										<ul class="submenu dropdown-menu">
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 1 </a></li>
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 2</a></li>
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 3</a></li>
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 4</a>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Testimonials</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link dropdown-toggle" href="javascript:void(0);"
+											data-toggle="dropdown">Service
+											Area</a>
+										<ul class="submenu dropdown-menu">
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 1 </a></li>
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 2</a></li>
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 3</a></li>
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 4</a>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link dropdown-toggle" href="javascript:void(0);"
+											data-toggle="dropdown">About Us</a>
+										<ul class="submenu dropdown-menu">
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 1 </a></li>
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 2</a></li>
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 3</a></li>
+											<li class="nav-item"><a class="nav-link" href="#"> Dropdown item 4</a>
+										</ul>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Contact Us</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+						<div class="header-search">
+							<a href="javascript:void(0);" class="icon-search"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'university-animal-clinic' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		<div class="searchbar">
+			<div class="container">
+				<div class="searchbar-inner">
+					<input type="text" class="form-control" placeholder="Search here..." />
+					<button type="submit" class="btn search-btn icon-search"></button>
+				</div>
+			</div>
+		</div>
+
+		<div class="mobile-bottom-header">
+			<div class="call-us">
+				<span>call us </span>
+				<a href="tel:9413557707">941-355-7707</a>
+			</div>
+		</div>
+	</header>

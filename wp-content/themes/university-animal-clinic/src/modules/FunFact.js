@@ -1,5 +1,5 @@
 const FunFact = () => {
-	$(document).ready(function () {
+	jQuery(document).ready(function($) {
 		$(".fun-fact-owl.owl-carousel").owlCarousel({
 			loop: true,
 			items: 1,
@@ -9,7 +9,7 @@ const FunFact = () => {
 			nav: true,
 		});
 
-		dotcount = 1;
+		let dotcount = 1;
 
 		jQuery('.fun-fact-owl .owl-dot').each(function () {
 			jQuery(this).addClass('dotnumber' + dotcount);
@@ -17,7 +17,7 @@ const FunFact = () => {
 			dotcount = dotcount + 1;
 		});
 
-		slidecount = 1;
+		let slidecount = 1;
 
 		jQuery('.fun-fact-owl .owl-item').not('.cloned').each(function () {
 			jQuery(this).addClass('slidenumber' + slidecount);
@@ -30,9 +30,8 @@ const FunFact = () => {
 			jQuery(this).css("background-image", "url(" + slidegrab + ")");
 		});
 
-		amount = $('.fun-fact-owl .owl-dot').length;
-		gotowidth = 100 / amount;
-
+		const amount = $('.fun-fact-owl .owl-dot').length;
+		const gotowidth = 100 / amount;
 	});
 }
 
