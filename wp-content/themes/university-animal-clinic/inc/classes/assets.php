@@ -28,13 +28,17 @@ class Assets
 	*/
 	public function university_animal_clinic_scripts() 
 	{
-		wp_enqueue_style( 'university-animal-clinic-style', get_stylesheet_uri(), array(), _S_VERSION );
-		wp_style_add_data( 'university-animal-clinic-style', 'rtl', 'replace' );
+		wp_enqueue_style('university-animal-clinic-google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+		wp_enqueue_style('university-animal-clinic-style', get_stylesheet_uri(), array(), _S_VERSION);
+		wp_enqueue_style('university-animal-clinic-style-bundle', get_template_directory_uri() . '/build/style-index.css', array(), _S_VERSION);
+		wp_style_add_data('university-animal-clinic-style', 'rtl', 'replace');
 
-		wp_enqueue_script( 'university-animal-clinic-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+		wp_enqueue_script('university-animal-clinic-popper', get_template_directory_uri() . '/js/popper.min.js', array('jquery'), _S_VERSION, true);
+		wp_enqueue_script('university-animal-clinic-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), _S_VERSION, true);
+		wp_enqueue_script('university-animal-clinic-owl-carousel', get_template_directory_uri() . '/js/owl-carousel.min.js', array(), _S_VERSION, true);
 
-		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-			wp_enqueue_script( 'comment-reply' );
+		if(is_singular() && comments_open() && get_option('thread_comments')) {
+			wp_enqueue_script('comment-reply');
 		}
 	}
 }

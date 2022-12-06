@@ -15,7 +15,7 @@ class University_Animal_Clinic_Theme
 	protected function __construct() 
 	{
 		// Loading Classes
-		ASSETS::get_instance();
+		Assets::get_instance();
 
 		// Actions & Filters
 		$this->setup_hooks();

@@ -163,6 +163,7 @@ dist
 
 # Build data
 /build/
+build/
 
 ### WordPress ###
 # Core
