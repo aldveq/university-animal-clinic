@@ -67,7 +67,7 @@ select, input, button, textarea { outline: none !important; }
 
 /* Header Start */
 .covid-message { background-color: #656768; color: #FFFFFF; text-align: center; padding: 8px 0; position: relative; }
-.covid-message .covid-text { max-width: 750px; text-align: left; font-size: 14px; display: inline-block; vertical-align: middle; }
+.covid-message .covid-text { max-width: 750px; text-align: left; font-size: 14px; display: inline-block; vertical-align: middle; p {margin: 0;} }
 .covid-message .learn-more { color: #FFD655; }
 .covid-message .covid-link { display: inline-block; vertical-align: middle; }
 .covid-message .learn-more:hover { color: #FFC200; }
