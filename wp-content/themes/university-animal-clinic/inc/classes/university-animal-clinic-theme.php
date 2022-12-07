@@ -16,6 +16,7 @@ class University_Animal_Clinic_Theme
 	{
 		// Loading Classes
 		Assets::get_instance();
+		Utilities::get_instance();
 
 		// Actions & Filters
 		$this->setup_hooks();
@@ -66,7 +67,8 @@ class University_Animal_Clinic_Theme
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'university-animal-clinic' ),
+				'header-navigation' => esc_html__( 'Header Navigation', 'university-animal-clinic' ),
+				'footer-navigation' => esc_html__( 'Footer Navigation', 'university-animal-clinic' ),
 			)
 		);
 

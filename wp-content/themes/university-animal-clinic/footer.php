@@ -76,17 +76,7 @@
 			<div class="container">
 				<div class="bottom-wrap">
 					<div class="footer-left">
-						<ul class="footer-menu">
-							<li>
-								<a href="#">Site Credits</a>
-							</li>
-							<li>
-								<a href="#">Sitemap</a>
-							</li>
-							<li>
-								<a href="#">Privacy Policy</a>
-							</li>
-						</ul>
+						<?php get_template_part('template-parts/navigation/nav', 'footer'); ?>
 						<div class="copyright">
 							Copyright © 2020. All Rights Reserved
 						</div>
