@@ -16,6 +16,9 @@ class University_Animal_Clinic_Theme
 	{
 		// Loading Classes
 		Assets::get_instance();
+		Acf_Json_Registration::get_instance();
+		Acf_Gutenberg_Blocks_Registration::get_instance();
+		Acf_Options_Page::get_instance();
 		Utilities::get_instance();
 
 		// Actions & Filters
