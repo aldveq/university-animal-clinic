@@ -1,0 +1,52 @@
+{
+    "key": "group_63917b5dcc5d2",
+    "title": "Services Post Type Fields",
+    "fields": [
+        {
+            "key": "field_63917b6f690c3",
+            "label": "Icon Type",
+            "name": "services_post_type_icon_type",
+            "type": "select",
+            "instructions": "Select the icon type of this service",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "dental": "Dental",
+                "heart_paw": "Heart Paw",
+                "vaccines": "Vaccines",
+                "exotic_care": "Exotic Care"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "services"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1670478890
+}
