@@ -50,4 +50,36 @@ class Post_Types_Queries
 		endif;
 
     }
+
+	public function get_doctors_post_type_data() 
+	{
+
+		$doctors_post_data = [];
+
+        $doctors_query = new WP_Query(array(
+			'post_type' => 'doctors',
+			'posts_per_page' => -1,
+            'orderby' => 'date',
+            'no_found_rows' => true,
+		));
+        
+        if ( $doctors_query->have_posts() ) {
+            while ( $doctors_query->have_posts() ) {
+                $doctors_query->the_post();
+
+                $doctor_obj = (object) array(
+                    'image_url' => wp_get_attachment_url(get_post_thumbnail_id(get_the_ID())),
+                    'image_alt_text' => get_the_title(),
+                    'title' => get_the_title(),
+                    'link' => get_the_permalink(),
+                );
+
+                array_push($doctors_post_data, $doctor_obj);
+            }
+        }
+        
+        wp_reset_postdata();
+
+        return $doctors_post_data;
+    }
 }
