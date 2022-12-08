@@ -20,6 +20,7 @@ class University_Animal_Clinic_Theme
 		Acf_Gutenberg_Blocks_Registration::get_instance();
 		Acf_Options_Page::get_instance();
 		Utilities::get_instance();
+		Post_Types_Queries::get_instance();
 
 		// Actions & Filters
 		$this->setup_hooks();
