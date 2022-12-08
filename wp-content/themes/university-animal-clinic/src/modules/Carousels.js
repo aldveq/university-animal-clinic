@@ -5,7 +5,7 @@ const Carousels = () => {
 			margin: 0,
 			nav: false,
 			autoplay: true,
-			autoplayTimeout: 5000,
+			autoplayTimeout: parseInt($('.home-slider').data('autoplay-timeout')) * 1000,
 			responsive: {
 				0: {
 					items: 1

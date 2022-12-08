@@ -12,6 +12,21 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+if ( ! defined('ACF_BLOCK_SUPPORTS') ) {
+	define( 'ACF_BLOCK_SUPPORTS' , array(
+		'align'  => array( 'wide', 'full' ),
+		'anchor' => true,
+	));
+}
+
+if ( ! defined('ACF_COLOR_ICON') ) {
+	define( 'ACF_COLOR_ICON', '#ffffff' );
+}
+
+if ( ! defined('ACF_BACKGROUND_COLOR_ICON') ) {
+	define( 'ACF_BACKGROUND_COLOR_ICON', '#FFD655' );
+}
+
 /**
  * Autoloaders.
  */

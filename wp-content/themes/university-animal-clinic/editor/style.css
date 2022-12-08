@@ -1,0 +1,7 @@
+.owl-carousel {
+	display: block;
+}
+
+.owl-carousel .item:not(:first-child) {
+	display: none;
+}

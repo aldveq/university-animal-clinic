@@ -30,6 +30,7 @@ class University_Animal_Clinic_Theme
 		add_action('after_setup_theme', [$this, 'university_animal_clinic_setup']);
 		add_action('after_setup_theme', [$this, 'university_animal_clinic_content_width'], 0);
 		add_action('widgets_init', [$this, 'university_animal_clinic_widgets_init']);
+		add_action('enqueue_block_editor_assets', [$this, 'university_animal_clinic_editor_block_assets']);
 	}
 
 	/**
@@ -74,6 +75,8 @@ class University_Animal_Clinic_Theme
 				'footer-navigation' => esc_html__( 'Footer Navigation', 'university-animal-clinic' ),
 			)
 		);
+
+		add_theme_support('align-wide');
 
 		/*
 			* Switch default core markup for search form, comment form, and comments
@@ -154,4 +157,10 @@ class University_Animal_Clinic_Theme
 			)
 		);
 	}
+
+	public function university_animal_clinic_editor_block_assets() 
+	{
+		wp_enqueue_style('university-animal-clinic-block-style-bundle', get_template_directory_uri() . '/build/style-index.css', array(), _S_VERSION);
+		wp_enqueue_style('university-animal-clinic-block-editor-styles', get_template_directory_uri() . '/editor/style.css', array(), _S_VERSION);
+    }
 }

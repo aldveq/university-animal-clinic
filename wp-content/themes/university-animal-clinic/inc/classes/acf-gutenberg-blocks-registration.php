@@ -20,7 +20,7 @@ class Acf_Gutenberg_Blocks_Registration
 
     protected function setup_hooks() 
 	{
-        add_filter('block_categories', [$this, 'add_block_categories'], 10, 2);
+        add_filter('block_categories_all', [$this, 'add_block_categories'], 10, 2);
         add_action('acf/init', [$this, 'register_acf_block_type']);
     }
 
