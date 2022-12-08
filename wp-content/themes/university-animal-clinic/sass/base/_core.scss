@@ -238,6 +238,8 @@ footer.footer { padding-top: 60px; background-color: #fafafa; }
 .footer-logo { margin-top: -20px; max-width: 260px; }
 
 .footer-contact .learn-more { text-transform: none; font-size: 16px; }
+.footer-contact p {margin: 0;}
+.footer-contact { &__phone {margin-top: 25px !important;} }
 .footer-social { margin-top: 25px; }
 .footer-social ul { margin: 0; padding: 0; }
 .footer-social ul li { list-style-type: none; display: inline-block; margin-right: 3px; }

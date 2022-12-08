@@ -40,8 +40,8 @@
                 {
                     "key": "field_6390fe9f6a6b0",
                     "label": "URL",
-                    "name": "general_settings_socials_url",
-                    "type": "text",
+                    "name": "general_settings_socials_link",
+                    "type": "link",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -50,11 +50,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "return_format": "array"
                 }
             ]
         }
@@ -77,5 +73,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1670446843
+    "modified": 1670466272
 }
