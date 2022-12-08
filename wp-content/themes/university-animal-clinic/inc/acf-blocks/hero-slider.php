@@ -9,7 +9,7 @@ acf_register_block_type(array(
     'icon' => array(
         'background' => ACF_BACKGROUND_COLOR_ICON,
         'foreground' => ACF_COLOR_ICON,
-        'src' => 'text'
+        'src' => 'slides'
     ),
     'keywords' => array( 'hero-slider' ),
     'mode' => 'preview',
