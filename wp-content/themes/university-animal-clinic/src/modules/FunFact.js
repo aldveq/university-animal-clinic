@@ -25,8 +25,8 @@ const FunFact = () => {
 		});
 
 		jQuery('.fun-fact-owl .owl-dot').each(function () {
-			grab = jQuery(this).data('info');
-			slidegrab = jQuery('.slidenumber' + grab + ' img').attr('src');
+			let grab = jQuery(this).data('info');
+			let slidegrab = jQuery('.slidenumber' + grab + ' img').attr('src');
 			jQuery(this).css("background-image", "url(" + slidegrab + ")");
 		});
 
