@@ -15,12 +15,4 @@ acf_register_block_type(array(
     'mode' => 'preview',
     'align' => 'full',
     'supports' => ACF_BLOCK_SUPPORTS,
-    'example'  => array(
-        'attributes' => array(
-                'mode' => 'preview',
-                'data' => array(
-                    'is_preview' => true
-                )
-        )
-    )
 ));
