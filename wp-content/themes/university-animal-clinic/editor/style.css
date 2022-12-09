@@ -5,3 +5,7 @@
 .owl-carousel .item:not(:first-child) {
 	display: none;
 }
+
+.exotic-care {
+	background-size: 340px;
+}
