@@ -1,0 +1,95 @@
+.home-team {
+	min-height: 458px;
+	position: relative;
+}
+
+.team-banner {
+	background-color: #ffd655;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	text-align: left;
+	min-height: 458px;
+}
+
+.team-banner .banner-image {
+	width: 36%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.home-team .team-content {
+	color: #231f20;
+	position: relative;
+	padding: 60px 0 80px 0;
+	text-align: center;
+	overflow: hidden;
+}
+
+.home-team .optinal-h4 {
+	display: inline-block;
+	border-color: #231f20;
+}
+
+.home-team .team-wrap {
+	width: 83%;
+	float: right;
+}
+
+.home-team h1,
+.home-team h2 {
+	margin-bottom: 50px;
+}
+
+.team-box {
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 7px 0 35px rgb(0 0 0 / 0.16);
+	margin-bottom: 30px;
+	color: #231f20;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+}
+
+.team-box .team-title {
+	font-size: 49px;
+	font-weight: 300;
+	margin: 12px 0 6px 0;
+	line-height: 1;
+	font-family: Perfetto, sans-serif;
+}
+
+.team-box .team-image {
+	position: relative;
+	overflow: hidden;
+}
+
+.team-box .team-hover {
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	bottom: -100%;
+	background-color: rgb(101 103 104 / 0.7);
+	height: 0;
+	transition: height 0.4s;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.team-box .team-hover .more-div {
+	width: 100%;
+}
+
+.team-box:hover .team-hover {
+	bottom: 0;
+	height: 100%;
+}
+
+.home-team .meet-button {
+	margin-top: 20px;
+}

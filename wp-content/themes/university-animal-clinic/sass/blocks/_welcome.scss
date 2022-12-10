@@ -1,0 +1,26 @@
+.welcome-block {
+	padding: 50px 0 60px 0;
+}
+
+.welcome-block .welcome-content {
+	margin-top: 35px;
+}
+
+.team-box.welcome-box {
+	display: inline-block;
+	padding: 30px;
+	transform: rotate(-6deg);
+	-webkit-transform: rotate(-6deg);
+	max-width: 480px;
+	margin-top: 55px;
+	width: 100%;
+}
+
+.welcome-box.team-box .team-title {
+	font-size: 80px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-bottom: 18px;
+	margin-bottom: -8px;
+}

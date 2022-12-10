@@ -1,0 +1,26 @@
+.home-slider .container {
+	position: relative;
+}
+
+.home-slider .slide-content {
+	position: absolute;
+	left: 20px;
+	bottom: 0;
+	width: 100%;
+	max-width: 645px;
+	background-color: rgba(101, 103, 104, 0.8);
+	padding: 50px 40px;
+}
+
+.home-slider .slide-content .optinal-h4,
+.home-slider .slide-content h3 {
+	color: #fff;
+}
+
+.home-slider .slide-content h3 {
+	font-size: 58px;
+}
+
+.home-slider .owl-dots {
+	display: none;
+}

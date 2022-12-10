@@ -1,0 +1,113 @@
+.testi-blog .container {
+	max-width: 1300px;
+}
+
+.testimonials {
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.testimonials .comman-icon {
+	margin-bottom: 4px;
+}
+
+.testimonials .comman-icon .icon-quotes {
+	margin-right: -28px;
+	margin-top: -6px;
+	font-size: 64px;
+}
+
+.testi-owl {
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+.testi-owl .owl-prev {
+	position: absolute;
+	left: -56px;
+	top: 36%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+}
+
+.testi-owl .owl-next {
+	position: absolute;
+	right: -56px;
+	top: 36%;
+	transform: translate(0, -50%);
+	-webkit-transform: translate(0, -50%);
+}
+
+.testi-owl p:last-child {
+	margin-bottom: 0;
+}
+
+.testi-owl .item b {
+	text-transform: uppercase;
+}
+
+.testimonials .testi-owl .owl-dots {
+	display: none;
+}
+
+.home-blog {
+	background-color: #ffd655;
+	padding: 120px 0 130px 30px;
+	position: relative;
+}
+
+.home-blog::after {
+	content: "";
+	width: 4000px;
+	height: 100%;
+	top: 0;
+	right: -4000px;
+	background-color: #ffd655;
+	position: absolute;
+}
+
+.home-blog .blog-title {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+.home-blog .optinal-h4 {
+	margin-bottom: 0;
+	color: #231f20;
+	border-color: #231f20;
+}
+
+.blog-main {
+	display: flex;
+}
+
+.blog-main .blog-image {
+	width: 47%;
+}
+
+.blog-main .blog-image img {
+	width: 100%;
+	height: 345px;
+	object-fit: cover;
+}
+
+.blog-main .blog-content {
+	width: 53%;
+	background-color: #fff;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 26px;
+}
+
+.blog-main .blog-inner {
+	width: 100%;
+}
+
+.blog-main h4 {
+	color: #231f20;
+}

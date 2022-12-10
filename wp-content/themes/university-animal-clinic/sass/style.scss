@@ -1,10 +1,31 @@
-// Vendors 
-@import './vendors/bootstrap';
-@import './vendors/owl-carousel';
-@import './vendors/owl-theme-default';
-@import './vendors/icomoon';
-@import './vendors/lity';
+// Vendors
+@import "./vendors/bootstrap";
+@import "./vendors/owl-carousel";
+@import "./vendors/owl-theme-default";
+@import "./vendors/icomoon";
+@import "./vendors/lity";
 
-// Base 
-@import './base/core';
-@import './base/responsive';
+// Base
+@import "./base/core";
+@import "./base/fonts";
+
+// Layout
+@import "./layout/container";
+
+// Components
+@import "./components/back-to-top";
+@import "./components/btn";
+@import "./components/footer";
+@import "./components/header";
+
+// Blocks
+@import "./blocks/exotic-care";
+@import "./blocks/fun-fact";
+@import "./blocks/hero-slider";
+@import "./blocks/services";
+@import "./blocks/team";
+@import "./blocks/testimonial-blog";
+@import "./blocks/welcome";
+
+// Base - Responsive Styles
+@import "./base/responsive";
