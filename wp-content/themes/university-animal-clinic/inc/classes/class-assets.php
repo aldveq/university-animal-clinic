@@ -1,32 +1,32 @@
 <?php
 
 /**
-* @package University_Animal_Clinic
-*/
+ * @package University_Animal_Clinic
+ */
 
 namespace UniversityAnimalClinic\Inc;
 
 use UniversityAnimalClinic\Inc\Traits\Singleton;
 
-class Assets 
+class Assets
 {
 	use Singleton;
 
-	protected function __construct() 
+	protected function __construct()
 	{
 		// Actions & Filters
 		$this->setup_hooks();
 	}
 
-	public function setup_hooks() 
+	public function setup_hooks()
 	{
 		add_action('wp_enqueue_scripts', [$this, 'university_animal_clinic_scripts']);
 	}
 
 	/**
-	* Enqueue scripts and styles.
-	*/
-	public function university_animal_clinic_scripts() 
+	 * Enqueue scripts and styles.
+	 */
+	public function university_animal_clinic_scripts()
 	{
 		wp_enqueue_style('university-animal-clinic-google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 		wp_enqueue_style('university-animal-clinic-style', get_stylesheet_uri(), array(), _S_VERSION);
@@ -37,9 +37,9 @@ class Assets
 		wp_enqueue_script('university-animal-clinic-bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), _S_VERSION, true);
 		wp_enqueue_script('university-animal-clinic-owl-carousel', get_template_directory_uri() . '/js/owl-carousel.min.js', array(), _S_VERSION, true);
 		wp_enqueue_script('university-animal-clinic-lity', get_template_directory_uri() . '/js/lity.min.js', array('jquery'), _S_VERSION, true);
-		wp_enqueue_script( 'university-animal-clinic-script-bundle', get_template_directory_uri() . '/build/index.js', array('jquery'), _S_VERSION, true );
+		wp_enqueue_script('university-animal-clinic-script-bundle', get_template_directory_uri() . '/build/index.js', array('jquery'), _S_VERSION, true);
 
-		if(is_singular() && comments_open() && get_option('thread_comments')) {
+		if (is_singular() && comments_open() && get_option('thread_comments')) {
 			wp_enqueue_script('comment-reply');
 		}
 	}
