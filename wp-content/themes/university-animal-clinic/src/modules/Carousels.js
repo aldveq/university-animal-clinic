@@ -1,19 +1,21 @@
+/*global jQuery*/
+
 const Carousels = () => {
-	jQuery(document).ready(function($) {
-		$('.home-slider').owlCarousel({
+	jQuery( document ).ready( function( $ ) {
+		$( '.home-slider' ).owlCarousel( {
 			loop: true,
 			margin: 0,
 			nav: false,
 			autoplay: true,
-			autoplayTimeout: parseInt($('.home-slider').data('autoplay-timeout')) * 1000,
+			autoplayTimeout: parseInt( $( '.home-slider' ).data( 'autoplay-timeout' ) ) * 1000,
 			responsive: {
 				0: {
-					items: 1
-				}
-			}
-		});
+					items: 1,
+				},
+			},
+		} );
 
-		$('.service-owl').owlCarousel({
+		$( '.service-owl' ).owlCarousel( {
 			loop: true,
 			margin: 16,
 			nav: true,
@@ -36,21 +38,21 @@ const Carousels = () => {
 					items: 2,
 					stagePadding: 20,
 				},
-			}
-		});
+			},
+		} );
 
-		$('.testi-owl').owlCarousel({
+		$( '.testi-owl' ).owlCarousel( {
 			loop: true,
 			margin: 0,
 			nav: true,
 			autoplay: false,
 			responsive: {
 				0: {
-					items: 1
-				}
-			}
-		});
-	});
-}
+					items: 1,
+				},
+			},
+		} );
+	} );
+};
 
 export default Carousels;
